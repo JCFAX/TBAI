@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-16" ?>
+<Application>
+	<forms>
+		<action type="add">
+			<form appformnumber="-1" FormType="-1" type="0" BorderStyle="0" uid="AX_PEC" title="New Form 6" visible="1" default_button="" pane="0" color="0" left="370" top="88" width="508" height="337" client_width="492" client_height="298" AutoManaged="0" SupportedModes="15" ObjectType="" modality="0">
+				<datasources>
+					<dbdatasources>
+						<action type="add"/>
+					</dbdatasources>
+					<userdatasources>
+						<action type="add"/>
+					</userdatasources>
+				</datasources>
+				<Menus/>
+				<items>
+					<action type="add"/>
+				</items>
+				<ChooseFromListCollection>
+					<action type="add">
+						<ChooseFromList UniqueID="-1" ObjectType="-1" MultiSelection="0" IsSystem="1"/>
+					</action>
+				</ChooseFromListCollection>
+				<DataBrowser/>
+				<Settings Enabled="0"/>
+			</form>
+		</action>
+	</forms>
+</Application>

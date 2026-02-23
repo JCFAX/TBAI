@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-16" ?>
+<Application>
+	<forms>
+		<action type="add">
+			<form appformnumber="AX_PEC" FormType="AX_PEC" type="0" BorderStyle="0" uid="AX_PEC" title="AX - Panel Envío Conector TBAI" visible="1" default_button="" pane="1" color="1" left="100" top="100" width="1150" height="800" client_width="1134" client_height="761" AutoManaged="0" SupportedModes="1" ObjectType="-1" mode="1" modality="0">
+				<datasources>
+					<dbdatasources>
+						<action type="add"/>
+					</dbdatasources>
+					<userdatasources>
+						<action type="add">
+							<datasource uid="FolderDS" type="9" size="10"/>
+							<datasource uid="dsDFec" type="10" size="4"/>
+							<datasource uid="dsHFec" type="10" size="4"/>
+							<datasource uid="FolderDS" type="9" size="10"/>
+						</action>
+					</userdatasources>
+					<DataTables>
+						<DataTable Uid="dtDDetEC">
+							<Columns/>
+						</DataTable>
+						<DataTable Uid="dtDDetRC">
+							<Columns/>
+						</DataTable>
+						<DataTable Uid="dtDoc">
+							<Columns/>
+						</DataTable>
+					</DataTables>
+				</datasources>
+				<Menus>
+					<action type="enable"/>
+					<action type="disable">
+						<Menu uid="5890"/>
+					</action>
+				</Menus>
+				<items>
+					<action type="add">
+						<item uid="FolderTi0" type="99" left="10" tab_order="0" width="150" top="5" height="20" visible="1" enabled="1" from_pane="0" to_pane="99" disp_desc="0" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="-1" supp_zeros="0" AffectsFormMode="1">
+							<AutoManagedAttribute/>
+							<specific caption="Envío a Conector" AffectsFormMode="1" val_on="1" val_off="N">
+								<databind databound="1" table="" alias="FolderDS"/>
+							</specific>
+						</item>
+						<item uid="FolderTi1" type="99" left="160" tab_order="0" width="150" top="5" height="20" visible="1" enabled="1" from_pane="0" to_pane="99" disp_desc="0" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="-1" supp_zeros="0" AffectsFormMode="1">
+							<AutoManagedAttribute/>
+							<specific caption="Repuesta desde Conector" AffectsFormMode="1" val_on="2" val_off="N">
+								<databind databound="1" table="" alias="FolderDS"/>
+							</specific>
+						</item>
+						<item uid="rctFol" type="100" left="10" tab_order="0" width="1107" top="24" height="708" visible="1" enabled="1" from_pane="0" to_pane="99" disp_desc="0" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="-1" supp_zeros="0" AffectsFormMode="0">
+							<AutoManagedAttribute/>
+							<specific/>
+						</item>
+						<item uid="cmbEst" type="113" left="148" tab_order="0" width="150" top="34" height="16" visible="1" enabled="1" from_pane="0" to_pane="99" disp_desc="1" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="10" supp_zeros="0" AffectsFormMode="1">
+							<AutoManagedAttribute/>
+							<specific AffectsFormMode="1" TabOrder="0">
+								<ValidValues>
+									<action type="add"/>
+								</ValidValues>
+								<databind databound="0" table="" alias=""/>
+							</specific>
+						</item>
+						<item uid="lblEst" type="8" left="18" tab_order="0" width="112" top="34" height="14" visible="1" enabled="0" from_pane="0" to_pane="99" disp_desc="0" right_just="0" description="" linkto="cmbEst" forecolor="0" backcolor="-1" text_style="0" font_size="10" supp_zeros="0" AffectsFormMode="1">
+							<AutoManagedAttribute/>
+							<specific caption="Estado"/>
+						</item>
+						<item uid="cmbRes" type="113" left="148" tab_order="0" width="150" top="51" height="16" visible="1" enabled="1" from_pane="0" to_pane="99" disp_desc="1" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="10" supp_zeros="0" AffectsFormMode="1">
+							<AutoManagedAttribute/>
+							<specific AffectsFormMode="1" TabOrder="0">
+								<ValidValues>
+									<action type="add"/>
+								</ValidValues>
+								<databind databound="0" table="" alias=""/>
+							</specific>
+						</item>
+						<item uid="lblRes" type="8" left="18" tab_order="0" width="112" top="51" height="14" visible="1" enabled="0" from_pane="0" to_pane="99" disp_desc="0" right_just="0" description="" linkto="cmbRes" forecolor="0" backcolor="-1" text_style="0" font_size="10" supp_zeros="0" AffectsFormMode="1">
+							<AutoManagedAttribute/>
+							<specific caption="Respuesta"/>
+						</item>
+						<item uid="cmbTipDoc" type="113" left="148" tab_order="0" width="150" top="68" height="16" visible="1" enabled="1" from_pane="0" to_pane="99" disp_desc="1" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="10" supp_zeros="0" AffectsFormMode="1">
+							<AutoManagedAttribute/>
+							<specific AffectsFormMode="1" TabOrder="0">
+								<ValidValues>
+									<action type="add"/>
+								</ValidValues>
+								<databind databound="0" table="" alias=""/>
+							</specific>
+						</item>
+						<item uid="lblTipDoc" type="8" left="18" tab_order="0" width="112" top="68" height="14" visible="1" enabled="0" from_pane="0" to_pane="99" disp_desc="0" right_just="0" description="" linkto="cmbTipDoc" forecolor="0" backcolor="-1" text_style="0" font_size="10" supp_zeros="0" AffectsFormMode="1">
+							<AutoManagedAttribute/>
+							<specific caption="Tipo Documento"/>
+						</item>
+						<item uid="txtDesFec" type="16" left="148" tab_order="0" width="150" top="85" height="16" visible="1" enabled="1" from_pane="0" to_pane="99" disp_desc="0" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="10" supp_zeros="0" AffectsFormMode="1">
+							<AutoManagedAttribute/>
+							<specific TabOrder="0" IsPassword="0">
+								<databind databound="1" table="" alias="dsDFec"/>
+							</specific>
+						</item>
+						<item uid="lblDesFec" type="8" left="18" tab_order="0" width="112" top="85" height="14" visible="1" enabled="0" from_pane="0" to_pane="99" disp_desc="0" right_just="0" description="" linkto="txtDesFec" forecolor="0" backcolor="-1" text_style="0" font_size="10" supp_zeros="0" AffectsFormMode="1">
+							<AutoManagedAttribute/>
+							<specific caption="Desde Fecha"/>
+						</item>
+						<item uid="txtHasFec" type="16" left="148" tab_order="0" width="150" top="102" height="16" visible="1" enabled="1" from_pane="0" to_pane="99" disp_desc="0" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="10" supp_zeros="0" AffectsFormMode="1">
+							<AutoManagedAttribute/>
+							<specific TabOrder="0" IsPassword="0">
+								<databind databound="1" table="" alias="dsHFec"/>
+							</specific>
+						</item>
+						<item uid="lblHasFec" type="8" left="18" tab_order="0" width="112" top="102" height="14" visible="1" enabled="0" from_pane="0" to_pane="99" disp_desc="0" right_just="0" description="" linkto="txtHasFec" forecolor="0" backcolor="-1" text_style="0" font_size="10" supp_zeros="0" AffectsFormMode="1">
+							<AutoManagedAttribute/>
+							<specific caption="Hasta Fecha"/>
+						</item>
+						<item uid="txtNumReg" type="16" left="148" tab_order="0" width="75" top="119" height="16" visible="1" enabled="1" from_pane="0" to_pane="99" disp_desc="0" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="10" supp_zeros="0" AffectsFormMode="1">
+							<AutoManagedAttribute/>
+							<specific TabOrder="0" IsPassword="0">
+								<databind databound="0" table="" alias=""/>
+							</specific>
+						</item>
+						<item uid="lblNumReg" type="8" left="18" tab_order="0" width="112" top="119" height="14" visible="1" enabled="0" from_pane="0" to_pane="99" disp_desc="0" right_just="0" description="" linkto="txtNumReg" forecolor="0" backcolor="-1" text_style="0" font_size="10" supp_zeros="0" AffectsFormMode="1">
+							<AutoManagedAttribute/>
+							<specific caption="Nº Registros Mostrados"/>
+						</item>
+						<item uid="txtTotReg" type="16" left="223" tab_order="0" width="75" top="119" height="16" visible="1" enabled="0" from_pane="0" to_pane="99" disp_desc="0" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="10" supp_zeros="0" AffectsFormMode="1">
+							<AutoManagedAttribute/>
+							<specific TabOrder="0" IsPassword="0">
+								<databind databound="0" table="" alias=""/>
+							</specific>
+						</item>
+						<item uid="btnRec" type="4" left="348" tab_order="0" width="65" top="119" height="19" visible="1" enabled="1" from_pane="0" to_pane="99" disp_desc="0" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="-1" supp_zeros="0" AffectsFormMode="1">
+							<AutoManagedAttribute/>
+							<specific caption="Recargar"/>
+						</item>
+						<item uid="grdDoc" type="128" left="16" tab_order="0" width="1092" top="150" height="268" visible="1" enabled="0" from_pane="0" to_pane="99" disp_desc="0" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="-1" supp_zeros="0" AffectsFormMode="1">
+							<AutoManagedAttribute/>
+							<specific SelectionMode="2" DataTable="" CollapseLevel="0">
+								<RowHeaders Width="20"/>
+								<GridColumns/>
+							</specific>
+						</item>
+						<item uid="lblDocDet" type="8" left="16" tab_order="0" width="50" top="428" height="14" visible="1" enabled="0" from_pane="0" to_pane="99" disp_desc="0" right_just="0" description="" linkto="" forecolor="0" backcolor="-1" text_style="1" font_size="10" supp_zeros="0" AffectsFormMode="1">
+							<AutoManagedAttribute/>
+							<specific caption="Detalle"/>
+						</item>
+						<item uid="grdDDetEC" type="128" left="16" tab_order="0" width="1092" top="452" height="238" visible="1" enabled="0" from_pane="1" to_pane="1" disp_desc="0" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="-1" supp_zeros="0" AffectsFormMode="1">
+							<AutoManagedAttribute/>
+							<specific SelectionMode="1" DataTable="" CollapseLevel="0">
+								<RowHeaders Width="20"/>
+								<GridColumns/>
+							</specific>
+						</item>
+						<item uid="btnEnv" type="4" left="1027" tab_order="0" width="65" top="702" height="19" visible="1" enabled="1" from_pane="1" to_pane="1" disp_desc="0" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="-1" supp_zeros="0" AffectsFormMode="1">
+							<AutoManagedAttribute/>
+							<specific caption="Enviar"/>
+						</item>
+						<item uid="grdDDetRC" type="128" left="16" tab_order="0" width="1092" top="452" height="238" visible="1" enabled="0" from_pane="2" to_pane="2" disp_desc="0" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="-1" supp_zeros="0" AffectsFormMode="1">
+							<AutoManagedAttribute/>
+							<specific SelectionMode="1" DataTable="" CollapseLevel="0">
+								<RowHeaders Width="20"/>
+								<GridColumns/>
+							</specific>
+						</item>
+						<item uid="btnRes" type="4" left="1027" tab_order="0" width="65" top="702" height="19" visible="1" enabled="1" from_pane="2" to_pane="2" disp_desc="0" right_just="0" description="" linkto="" forecolor="-1" backcolor="-1" text_style="0" font_size="-1" supp_zeros="0" AffectsFormMode="1">
+							<AutoManagedAttribute/>
+							<specific caption="Respuesta"/>
+						</item>
+					</action>
+				</items>
+				<items>
+					<action type="group">
+						<item uid="FolderTi0"/>
+						<item uid="FolderTi1"/>
+					</action>
+				</items>
+				<FormMenu/>
+				<ChooseFromListCollection>
+					<action type="add">
+						<ChooseFromList UniqueID="-1" ObjectType="-1" MultiSelection="0" IsSystem="1"/>
+					</action>
+				</ChooseFromListCollection>
+				<DataBrowser/>
+				<Settings Enabled="0" MatrixUID="grdDoc" EnableRowFormat="1"/>
+			</form>
+		</action>
+	</forms>
+</Application>
