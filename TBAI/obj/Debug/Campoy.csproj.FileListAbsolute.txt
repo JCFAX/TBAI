@@ -1,0 +1,17 @@
+E:\Axalpha Consulting\Desarrollo\TFS\rbean\Addons\Campoy\Campoy\bin\Debug\Campoy.exe
+E:\Axalpha Consulting\Desarrollo\TFS\rbean\Addons\Campoy\Campoy\bin\Debug\Campoy.pdb
+E:\Axalpha Consulting\Desarrollo\TFS\rbean\Addons\Campoy\Campoy\bin\Debug\Common.dll
+E:\Axalpha Consulting\Desarrollo\TFS\rbean\Addons\Campoy\Campoy\bin\Debug\Common.XmlSerializers.dll
+E:\Axalpha Consulting\Desarrollo\TFS\rbean\Addons\Campoy\Campoy\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\Axalpha Consulting\Desarrollo\TFS\rbean\Addons\Campoy\Campoy\bin\Debug\Interop.SAPbobsCOM.dll
+E:\Axalpha Consulting\Desarrollo\TFS\rbean\Addons\Campoy\Campoy\bin\Debug\Interop.SAPbouiCOM.dll
+E:\Axalpha Consulting\Desarrollo\TFS\rbean\Addons\Campoy\Campoy\bin\Debug\Common.xml
+E:\Axalpha Consulting\Desarrollo\TFS\rbean\Addons\Campoy\Campoy\obj\Debug\ResolveAssemblyReference.cache
+E:\Axalpha Consulting\Desarrollo\TFS\rbean\Addons\Campoy\Campoy\obj\Debug\Campoy.Properties.Resources.resources
+E:\Axalpha Consulting\Desarrollo\TFS\rbean\Addons\Campoy\Campoy\obj\Debug\Campoy.csproj.GenerateResource.Cache
+E:\Axalpha Consulting\Desarrollo\TFS\rbean\Addons\Campoy\Campoy\obj\Debug\Campoy.exe
+E:\Axalpha Consulting\Desarrollo\TFS\rbean\Addons\Campoy\Campoy\obj\Debug\Campoy.pdb
+E:\Axalpha Consulting\Desarrollo\TFS\rbean\Addons\Campoy\Campoy\obj\Debug\Interop.SAPbobsCOM.dll
+E:\Axalpha Consulting\Desarrollo\TFS\rbean\Addons\Campoy\Campoy\obj\Debug\Interop.SAPbouiCOM.dll
+E:\Axalpha Consulting\Desarrollo\TFS\rbean\Addons\Campoy\Campoy\obj\Debug\Campoy.csproj.ResolveComReference.cache
+E:\Axalpha Consulting\Desarrollo\TFS\rbean\Addons\Campoy\Campoy\bin\Debug\Campoy.exe.config
